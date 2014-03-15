@@ -113,7 +113,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2014-03-15 15:21:58</creation_date>
-			<updated_date>2014-03-15 18:54:10</updated_date>
+			<updated_date>2014-03-16 00:54:11</updated_date>
 			<model_property>
 				<name>プロジェクト名</name>
 				<value></value>
@@ -137,9 +137,9 @@
 		</model_properties>
 		<table_properties>
 			<schema></schema>
-			<character_set></character_set>
-			<collation></collation>
-			<storage_engine></storage_engine>
+			<character_set>utf8</character_set>
+			<collation>utf8_general_ci</collation>
+			<storage_engine>InnoDB</storage_engine>
 			<primary_key_length_of_text>null</primary_key_length_of_text>
 		</table_properties>
 		<environment_setting>
@@ -1243,7 +1243,7 @@
 			<connections>
 				<relation>
 					<id>4</id>
-					<source>0</source>
+					<source>7</source>
 					<target>6</target>
 						<source_xp>-1</source_xp>
 						<source_yp>-1</source_yp>
@@ -1265,7 +1265,7 @@
 				</relation>
 				<relation>
 					<id>5</id>
-					<source>7</source>
+					<source>0</source>
 					<target>6</target>
 						<source_xp>-1</source_xp>
 						<source_yp>-1</source_yp>
@@ -1329,7 +1329,7 @@
 				<normal_column>
 					<id>20</id>
 					<referenced_column>0</referenced_column>
-					<relation>4</relation>
+					<relation>5</relation>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
@@ -1363,7 +1363,7 @@
 				<normal_column>
 					<id>21</id>
 					<referenced_column>24</referenced_column>
-					<relation>5</relation>
+					<relation>4</relation>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
