@@ -40,8 +40,8 @@ class InformationFixture extends CakeTestFixture {
 			'id' => 1,
 			'summary' => 'Lorem ipsum dolor sit amet',
 			'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'created' => '2014-03-16 01:25:13',
-			'modified' => '2014-03-16 01:25:13'
+			'created' => '2014-03-16 15:05:58',
+			'modified' => '2014-03-16 15:05:58'
 		),
 	);
 

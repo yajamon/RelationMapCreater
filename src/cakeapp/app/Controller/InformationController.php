@@ -56,9 +56,9 @@ class InformationController extends AppController {
 				$this->Session->setFlash(__('The information could not be saved. Please, try again.'));
 			}
 		}
-		$objects = $this->Information->Object->find('list');
-		$tags = $this->Information->Tag->find('list');
-		$this->set(compact('objects', 'tags'));
+		$labels = $this->Information->Label->find('list');
+		$subjects = $this->Information->Subject->find('list');
+		$this->set(compact('labels', 'subjects'));
 	}
 
 /**
@@ -83,9 +83,9 @@ class InformationController extends AppController {
 			$options = array('conditions' => array('Information.' . $this->Information->primaryKey => $id));
 			$this->request->data = $this->Information->find('first', $options);
 		}
-		$objects = $this->Information->Object->find('list');
-		$tags = $this->Information->Tag->find('list');
-		$this->set(compact('objects', 'tags'));
+		$labels = $this->Information->Label->find('list');
+		$subjects = $this->Information->Subject->find('list');
+		$this->set(compact('labels', 'subjects'));
 	}
 
 /**

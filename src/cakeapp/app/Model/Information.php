@@ -3,8 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Information Model
  *
- * @property Object $Object
- * @property Tag $Tag
+ * @property Label $Label
+ * @property Subject $Subject
  */
 class Information extends AppModel {
 
@@ -51,11 +51,11 @@ class Information extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Object' => array(
-			'className' => 'Object',
-			'joinTable' => 'informations_objects',
+		'Label' => array(
+			'className' => 'Label',
+			'joinTable' => 'informations_labels',
 			'foreignKey' => 'information_id',
-			'associationForeignKey' => 'object_id',
+			'associationForeignKey' => 'label_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
@@ -64,11 +64,11 @@ class Information extends AppModel {
 			'offset' => '',
 			'finderQuery' => '',
 		),
-		'Tag' => array(
-			'className' => 'Tag',
-			'joinTable' => 'informations_tags',
+		'Subject' => array(
+			'className' => 'Subject',
+			'joinTable' => 'informations_subjects',
 			'foreignKey' => 'information_id',
-			'associationForeignKey' => 'tag_id',
+			'associationForeignKey' => 'subject_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
