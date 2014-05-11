@@ -1,6 +1,5 @@
 .sorting_menu li{
 	display: inline-block;
-	/*test*/
 }
 
 .contents{
@@ -9,5 +8,9 @@
 }
 
 .content{
+	display: inline-block;
+}
+
+.content .actions li{
 	display: inline-block;
 }
