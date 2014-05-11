@@ -28,13 +28,8 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Label'), array('action' => 'edit', $label['Label']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Label'), array('action' => 'delete', $label['Label']['id']), null, __('Are you sure you want to delete # %s?', $label['Label']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Labels'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Label'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Information'), array('controller' => 'information', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Information'), array('controller' => 'information', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Subjects'), array('controller' => 'subjects', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Subject'), array('controller' => 'subjects', 'action' => 'add')); ?> </li>
 	</ul>
+	<?php echo $this->element('labels/actions'); ?>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Information'); ?></h3>
