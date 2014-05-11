@@ -23,7 +23,7 @@ $this->end();
 				<li><?php echo h($subject['Subject']['created']); ?>&nbsp;</li>
 				<li><?php echo h($subject['Subject']['modified']); ?>&nbsp;</li>
 				<li class="actions">
-					<?php echo $this->Html->link(__('View'), array('action' => 'view', $subject['Subject']['id'])); ?>
+					<?php echo $this->Html->link(__('View'), array('action' => 'view', $subject['Subject']['id']), array('class'=>'view')); ?>
 					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $subject['Subject']['id'])); ?>
 					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $subject['Subject']['id']), null, __('Are you sure you want to delete # %s?', $subject['Subject']['id'])); ?>
 				</li>
