@@ -14,16 +14,20 @@ $this->end();
 		<!-- <li class="actions"><?php echo __('Actions'); ?></li> -->
 	</ul>
 	<h3>Contents</h3>
-	<ul>
+	<ul class="contents">
 		<?php foreach ($subjects as $subject): ?>
-		<li><?php echo h($subject['Subject']['id']); ?>&nbsp;</li>
-		<li><?php echo h($subject['Subject']['name']); ?>&nbsp;</li>
-		<li><?php echo h($subject['Subject']['created']); ?>&nbsp;</li>
-		<li><?php echo h($subject['Subject']['modified']); ?>&nbsp;</li>
-		<li class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $subject['Subject']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $subject['Subject']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $subject['Subject']['id']), null, __('Are you sure you want to delete # %s?', $subject['Subject']['id'])); ?>
+		<li class='content'>
+			<ul>
+				<li><?php echo h($subject['Subject']['id']); ?>&nbsp;</li>
+				<li><?php echo h($subject['Subject']['name']); ?>&nbsp;</li>
+				<li><?php echo h($subject['Subject']['created']); ?>&nbsp;</li>
+				<li><?php echo h($subject['Subject']['modified']); ?>&nbsp;</li>
+				<li class="actions">
+					<?php echo $this->Html->link(__('View'), array('action' => 'view', $subject['Subject']['id'])); ?>
+					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $subject['Subject']['id'])); ?>
+					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $subject['Subject']['id']), null, __('Are you sure you want to delete # %s?', $subject['Subject']['id'])); ?>
+				</li>
+			</ul>
 		</li>
 		<?php endforeach; ?>
 	</ul>
