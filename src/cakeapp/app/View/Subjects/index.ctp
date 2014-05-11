@@ -1,14 +1,19 @@
-<div class="subjects index">
+<?php
+$this->append('css');
+echo $this->Html->css('subjects/index');
+$this->end();
+?>
+ <div class="subjects index">
 	<h2><?php echo __('Subjects'); ?></h2>
-	Sorting Menu
-	<ul>
+	<h3>Sorting menu</h3>
+	<ul class='sorting_menu' >
 		<li><?php echo $this->Paginator->sort('id'); ?></li>
 		<li><?php echo $this->Paginator->sort('name'); ?></li>
 		<li><?php echo $this->Paginator->sort('created'); ?></li>
 		<li><?php echo $this->Paginator->sort('modified'); ?></li>
 		<!-- <li class="actions"><?php echo __('Actions'); ?></li> -->
 	</ul>
-	Content
+	<h3>Contents</h3>
 	<ul>
 		<?php foreach ($subjects as $subject): ?>
 		<li><?php echo h($subject['Subject']['id']); ?>&nbsp;</li>
