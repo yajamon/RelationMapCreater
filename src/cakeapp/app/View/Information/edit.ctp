@@ -17,10 +17,6 @@
 	<ul>
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Information.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Information.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Information'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Labels'), array('controller' => 'labels', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Label'), array('controller' => 'labels', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Subjects'), array('controller' => 'subjects', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Subject'), array('controller' => 'subjects', 'action' => 'add')); ?> </li>
 	</ul>
+	<?php echo $this->element('information/actions'); ?>
 </div>
